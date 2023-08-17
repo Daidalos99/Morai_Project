@@ -1,0 +1,75 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/daidalos99/slam_kw_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e2dae/fast && /usr/bin/make -f CMakeFiles/cmTC_e2dae.dir/build.make CMakeFiles/cmTC_e2dae.dir/build
+make[1]: Entering directory '/home/daidalos99/slam_kw_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e2dae.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_e2dae.dir/src.c.o   -c /home/daidalos99/slam_kw_ws/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_e2dae
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e2dae.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_e2dae.dir/src.c.o  -o cmTC_e2dae 
+/usr/bin/ld: CMakeFiles/cmTC_e2dae.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_e2dae.dir/build.make:87: cmTC_e2dae] Error 1
+make[1]: Leaving directory '/home/daidalos99/slam_kw_ws/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_e2dae/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/daidalos99/slam_kw_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_529fb/fast && /usr/bin/make -f CMakeFiles/cmTC_529fb.dir/build.make CMakeFiles/cmTC_529fb.dir/build
+make[1]: Entering directory '/home/daidalos99/slam_kw_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_529fb.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_529fb.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_529fb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_529fb.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_529fb.dir/CheckFunctionExists.c.o  -o cmTC_529fb  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_529fb.dir/build.make:87: cmTC_529fb] Error 1
+make[1]: Leaving directory '/home/daidalos99/slam_kw_ws/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_529fb/fast] Error 2
+
+
+
+Determining if the include file pgm.h exists failed with the following output:
+Change Dir: /home/daidalos99/slam_kw_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ce8cd/fast && /usr/bin/make -f CMakeFiles/cmTC_ce8cd.dir/build.make CMakeFiles/cmTC_ce8cd.dir/build
+make[1]: Entering directory '/home/daidalos99/slam_kw_ws/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ce8cd.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_ce8cd.dir/CheckIncludeFile.cxx.o -c /home/daidalos99/slam_kw_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+/home/daidalos99/slam_kw_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:10: fatal error: pgm.h: No such file or directory
+    1 | #include <pgm.h>
+      |          ^~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_ce8cd.dir/build.make:66: CMakeFiles/cmTC_ce8cd.dir/CheckIncludeFile.cxx.o] Error 1
+make[1]: Leaving directory '/home/daidalos99/slam_kw_ws/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_ce8cd/fast] Error 2
+
+
+

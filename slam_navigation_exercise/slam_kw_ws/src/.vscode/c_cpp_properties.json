@@ -1,0 +1,36 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/daidalos99/slam_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/daidalos99/slam_ws/src/slam_n_navigation/navigation/amcl/include/**",
+        "/home/daidalos99/slam_ws/src/slam_n_navigation/navigation/base_local_planner/include/**",
+        "/home/daidalos99/slam_ws/src/slam_n_navigation/navigation/carrot_planner/include/**",
+        "/home/daidalos99/slam_ws/src/slam_n_navigation/navigation/clear_costmap_recovery/include/**",
+        "/home/daidalos99/slam_ws/src/slam_n_navigation/navigation/costmap_2d/include/**",
+        "/home/daidalos99/slam_ws/src/slam_n_navigation/navigation/dwa_local_planner/include/**",
+        "/home/daidalos99/slam_ws/src/slam_n_navigation/navigation/global_planner/include/**",
+        "/home/daidalos99/slam_ws/src/slam_n_navigation/navigation/map_server/include/**",
+        "/home/daidalos99/slam_ws/src/slam_n_navigation/navigation/move_base/include/**",
+        "/home/daidalos99/slam_ws/src/slam_n_navigation/navigation/move_slow_and_clear/include/**",
+        "/home/daidalos99/slam_ws/src/slam_n_navigation/navigation/nav_core/include/**",
+        "/home/daidalos99/slam_ws/src/slam_n_navigation/navigation/navfn/include/**",
+        "/home/daidalos99/slam_ws/src/slam_n_navigation/pointcloud_to_laserscan/include/**",
+        "/home/daidalos99/slam_ws/src/slam_n_navigation/navigation/rotate_recovery/include/**",
+        "/home/daidalos99/slam_ws/src/slam_n_navigation/navigation/voxel_grid/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

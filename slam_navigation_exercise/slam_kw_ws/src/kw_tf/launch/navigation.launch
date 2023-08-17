@@ -1,0 +1,16 @@
+<launch>
+  <!-- map file -->
+  <arg name="map_file" default="$(find kw_tf)/maps/map.yaml"/>
+    
+  <!-- map server -->
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+  
+  <!-- amcl -->
+  <include file="$(find scout_mini_2dnav)/launch/amcl.launch" />
+  
+  <!-- move base -->
+  <include file="$(find scout_mini_2dnav)/launch/move_base_only.launch" />
+  
+  <!-- run rviz -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find kw_tf)/rviz/navigation.rviz" />
+</launch>

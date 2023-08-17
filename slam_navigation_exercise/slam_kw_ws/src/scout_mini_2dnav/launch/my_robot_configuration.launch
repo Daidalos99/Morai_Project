@@ -1,0 +1,12 @@
+<launch>
+  <!--node pkg="sensor_node_pkg" type="sensor_node_type" name="sensor_node_name" output="screen">
+    <param name="sensor_param" value="param_value" />
+  </node>
+  <node pkg="odom_node_pkg" type="odom_node_type" name="odom_node" output="screen">
+    <param name="odom_param" value="param_value" />
+  </node>
+  <node pkg="transform_configuration_pkg" type="transform_configuration_type" name="transform_configuration_name" output="screen">
+    <param name="transform_configuration_param" value="param_value" />
+  </node-->
+  <node pkg="tf" type="static_transform_publisher" name="base_link_to_laser" args="0 0 1 0 0 0 base_link laser 50" />
+</launch>
