@@ -14,3 +14,5 @@ All 3 Exercises are conducted in the same environment as below.
 If you want to use this exercises, please set the same environment like above.
 
 Each Exercise has its on **README.md**, so please read ones before conducting the exercises.
+
+All these projects are helped by **WeGo Robotics**.
