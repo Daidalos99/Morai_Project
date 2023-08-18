@@ -24,9 +24,9 @@ Using 8 above, detect lanes with sliding window algorithm and move scout_mini au
 ![LKAS](https://github.com/Daidalos99/Morai_Project/assets/95322972/d794e69f-afca-4552-ac63-30a60714896e)
 
 - path_maker.launch:  
-Path making using GPS and IMU
+Path making using GPS and IMU  
 ![gps_path_making](https://github.com/Daidalos99/Morai_Project/assets/95322972/51be6bfb-6b83-47b1-9643-61faa90e48be)
 
 - planner.launch:  
-Path planning based on path extracted from **'path_maker.launch'**
+Path planning based on path extracted from **'path_maker.launch'**  
 ![gps_planning](https://github.com/Daidalos99/Morai_Project/assets/95322972/9a2d4c74-c10a-499a-8807-e2f3c55a5fb8)
