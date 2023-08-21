@@ -1,8 +1,0 @@
-prefix=/home/daidalos99/slam_kw_ws/devel
-
-Name: morai_msgs
-Description: Description of morai_msgs
-Version: 0.0.0
-Cflags: -I/home/daidalos99/slam_kw_ws/devel/include
-Libs: -L${prefix}/lib 
-Requires: std_msgs geometry_msgs message_runtime

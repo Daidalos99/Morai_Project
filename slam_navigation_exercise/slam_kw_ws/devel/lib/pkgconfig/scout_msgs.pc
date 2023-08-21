@@ -1,8 +1,0 @@
-prefix=/home/daidalos99/slam_kw_ws/devel
-
-Name: scout_msgs
-Description: Description of scout_msgs
-Version: 0.3.3
-Cflags: -I/home/daidalos99/slam_kw_ws/devel/include
-Libs: -L${prefix}/lib 
-Requires: 

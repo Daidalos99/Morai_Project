@@ -1,8 +1,0 @@
-(cl:in-package morai_msgs-msg)
-(cl:export '(LONGITUDINALVELOCITY-VAL
-          LONGITUDINALVELOCITY
-          LATITUDINALVELOCITY-VAL
-          LATITUDINALVELOCITY
-          ANGULARVELOCITY-VAL
-          ANGULARVELOCITY
-))

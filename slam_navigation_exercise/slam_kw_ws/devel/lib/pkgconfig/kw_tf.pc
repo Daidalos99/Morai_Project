@@ -1,8 +1,0 @@
-prefix=/home/daidalos99/slam_kw_ws/devel
-
-Name: kw_tf
-Description: Description of kw_tf
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
