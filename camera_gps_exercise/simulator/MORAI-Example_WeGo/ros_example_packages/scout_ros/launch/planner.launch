@@ -1,0 +1,5 @@
+<launch>
+    <!-- args="추종할 경로 이름" (x_offset) (y_offset)" -->
+    <node pkg="scout_ros" type="scout_planner.py" name="planner" args="kcity.txt 302459.942 4122635.537" output="screen" />
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find scout_ros)/rviz/planner.rviz" />
+</launch>

@@ -1,0 +1,4 @@
+<launch>
+	<!-- args = "(경로가 생성되는 폴더 이름) (생성할 경로의 파일 이름) (x_offset) (y_offset)" -->
+	<node pkg="scout_ros" type="scout_path_maker.py" name="maker" args="path daidalos99 302459.942 4122635.537" output="screen" />
+</launch>
