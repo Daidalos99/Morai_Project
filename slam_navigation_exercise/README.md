@@ -3,7 +3,7 @@
 Please conduct excercises below in **./slam_kw_ws** folder.  
 
 ## How to SLAM(use Gmapping)
-- First of all, you need to connect ROS Noetic and Morai Simulation using rosbridge. After this process, you need to reconnect the Network(F4) and Sensor(F3) settings in Morai Simulation.
+- First of all, you need to connect ROS Noetic and Morai Simulation using rosbridge. Of course, you need to attach LiDAR sensor to your scout_mini. After this process, you need to reconnect the Network(F4) and Sensor(F3) settings in Morai Simulation.
 - Then, publish the tf information using tf_setting.launch in kw_tf package.
 - Make 3D Pointcloud LiDAR data to 2D Laserscan topic using smaple_node.launch in pointcloud_to_laserscan package.
 - Finally, run Gmapping SLAM using slam_gmapping_pr2.launch
