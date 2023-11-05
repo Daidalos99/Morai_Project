@@ -1,3 +1,4 @@
 {
-    "ros.distro": "noetic"
+    "ros.distro": "noetic",
+    "cmake.sourceDirectory": "C:/Users/daida/Desktop/Morai_Project/camera_gps_exercise"
 }
