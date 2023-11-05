@@ -9,7 +9,7 @@ from std_msgs.msg import Float64,Int16,Float32MultiArray
 from geometry_msgs.msg import Vector3
 from geometry_msgs.msg import PoseStamped,Point,Twist
 from morai_msgs.msg import EgoVehicleStatus,ObjectStatusList
-from scout_ros.utils import pathReader, findLocalPath,purePursuit,cruiseControl,vaildObject ,velocityPlanning ,latticePlanner
+from scout_ros.utils import pathReader, findLocalPath, purePursuit, cruiseControl, vaildObject, velocityPlanning, latticePlanner
 import tf
 from scout_msgs.msg import ScoutStatus
 from math import cos,sin,sqrt,pow,atan2,pi
